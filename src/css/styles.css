@@ -1,77 +1,116 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f6f8fa;
+}
+
+.flat-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.04);
+  padding: 2.5rem 2rem;
+  margin-top: 2rem;
+}
+.profile-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #22223b;
+}
+.profile-subtitle {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+.btn-flat {
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.btn-flat:hover {
+  background: #4a4e69;
+  color: #fff;
+}
+.profile-img {
+  max-width: 260px;
+}
+@media (max-width: 767px) {
+  .flat-card {
+    padding: 1.5rem 1rem;
+  }
+  .profile-title {
+    font-size: 2rem;
+  }
 }
 
 header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
 }
 
 nav {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 15px;
-}
-
-nav a:hover {
-    background: #575757;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
 }
 
 .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
 }
 
 footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
 @media (max-width: 600px) {
-    .container {
-        width: 100%;
-        padding: 0 10px;
-    }
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
 
-    nav a {
-        display: block;
-        margin: 5px 0;
-    }
+  nav a {
+    display: block;
+    margin: 5px 0;
+  }
 }
 
 form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-form input, form textarea {
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+form input,
+form textarea {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 form input[type="submit"] {
-    background: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
+  background: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }
 
 form input[type="submit"]:hover {
-    background: #575757;
+  background: #575757;
 }

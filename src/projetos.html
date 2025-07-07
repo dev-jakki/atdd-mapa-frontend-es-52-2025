@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Entre em contato conosco através deste formulário.">
-    <title>Contato - Meu Website</title>
+    <meta name="description" content="Veja meus projetos de desenvolvimento frontend.">
+    <title>Projetos - Meu Site Pessoal</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <style>
@@ -18,18 +18,12 @@
             padding: 2.5rem 2rem;
             margin-top: 2rem;
         }
-        .btn-flat {
-            background: #22223b;
-            color: #fff;
-            border-radius: 8px;
-            border: none;
-            padding: 0.75rem 2rem;
-            font-weight: 600;
-            transition: background 0.2s;
-        }
-        .btn-flat:hover {
-            background: #4a4e69;
-            color: #fff;
+        .project-card {
+            border-radius: 14px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.03);
+            background: #fff;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
         }
     </style>
 </head>
@@ -46,51 +40,47 @@
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
                             <li class="nav-item"><a class="nav-link" href="about.html">Sobre</a></li>
-                            <li class="nav-item"><a class="nav-link" href="projetos.html">Projetos</a></li>
-                            <li class="nav-item"><a class="nav-link active" href="contact.html">Contato</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="projetos.html">Projetos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contato</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </div>
     </header>
-
     <main>
         <section class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-7">
+                <div class="col-lg-10">
                     <div class="flat-card">
-                        <h1 class="mb-4 text-center">Contato</h1>
-                        <form id="contactForm">
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Nome:</label>
-                                <input type="text" class="form-control" id="name" name="name" required>
+                        <h1 class="mb-4">Meus Projetos</h1>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="project-card mb-4">
+                                    <h3>Projeto 1</h3>
+                                    <p>Descrição breve do projeto 1. Explique o objetivo, tecnologias usadas e resultados alcançados.</p>
+                                    <a href="#" class="btn btn-sm btn-outline-primary">Ver mais</a>
+                                </div>
                             </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">E-mail:</label>
-                                <input type="email" class="form-control" id="email" name="email" required>
+                            <div class="col-md-6">
+                                <div class="project-card mb-4">
+                                    <h3>Projeto 2</h3>
+                                    <p>Descrição breve do projeto 2. Explique o objetivo, tecnologias usadas e resultados alcançados.</p>
+                                    <a href="#" class="btn btn-sm btn-outline-primary">Ver mais</a>
+                                </div>
                             </div>
-                            <div class="mb-3">
-                                <label for="message" class="form-label">Mensagem:</label>
-                                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-                            </div>
-                            <div class="d-grid">
-                                <button type="submit" class="btn btn-flat">Enviar</button>
-                            </div>
-                        </form>
-                        <div id="formResponse" class="mt-3"></div>
+                            <!-- Adicione mais projetos conforme necessário -->
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-
     <footer class="bg-light text-center py-3 mt-5 border-top">
         <div class="container">
             <p class="mb-0 text-secondary">&copy; 2025 Jakki. Todos os direitos reservados.</p>
         </div>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>

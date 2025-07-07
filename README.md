@@ -1,11 +1,12 @@
-# My Frontend Website
+# Projeto de site - Portfólio
 
-## Overview
-This project is a responsive frontend website developed using HTML5, CSS3, and JavaScript. It serves as a personal portfolio, showcasing various projects and providing a contact form for inquiries.
+## Visão Geral
+Este projeto é um site frontend responsivo desenvolvido utilizando HTML5, CSS3 e JavaScript. Ele serve como um portfólio pessoal, exibindo vários projetos e fornecendo um formulário de contato para consultas.
 
-## Project Structure
+## Estrutura do Projeto
 ```
-my-frontend-website
+atdd-mapa-frontend-es-52-2025
+├── node_modules
 ├── src
 │   ├── css
 │   │   └── styles.css
@@ -15,37 +16,38 @@ my-frontend-website
 │   ├── index.html
 │   ├── about.html
 │   ├── contact.html
-│   └── portfolio.html
+│   └── projetos.html
 ├── .gitignore
+├── package-lock.json
 ├── package.json
 └── README.md
 ```
 
-## Technologies Used
-- **HTML5**: For structuring the content of the website.
-- **CSS3**: For styling the website, ensuring a visually appealing and responsive design.
-- **JavaScript**: For adding interactivity, including form validation and dynamic effects.
+## Tecnologias Utilizadas
+- **HTML5**: Para estruturar o conteúdo do site.
+- **CSS3**: Para estilizar o site, garantindo um design visualmente atraente e responsivo.
+- **JavaScript**: Para adicionar interatividade, incluindo validação de formulários e efeitos dinâmicos.
 
-## Features
-- **Responsive Layout**: The website adapts to various screen sizes, providing an optimal viewing experience on desktops, tablets, and mobile devices.
-- **Navigation Menu**: A functional menu allows users to easily navigate between different pages.
-- **Contact Form**: Includes validation to ensure all fields are correctly filled out before submission.
-- **Interactive Effects**: Utilizes JavaScript/jQuery to enhance user experience with dynamic elements.
+## Funcionalidades
+- **Layout Responsivo**: O site se adapta a vários tamanhos de tela, proporcionando uma experiência de visualização ideal em desktops, tablets e dispositivos móveis.
+- **Menu de Navegação**: Um menu funcional permite que os usuários naveguem facilmente entre as diferentes páginas.
+- **Formulário de Contato**: Inclui validação para garantir que todos os campos sejam preenchidos corretamente antes do envio.
+- **Efeitos Interativos**: Utiliza JavaScript/jQuery para aprimorar a experiência do usuário com elementos dinâmicos.
 
-## Setup Instructions
-1. Clone the repository to your local machine.
-2. Navigate to the project directory.
-3. Open `src/index.html` in your web browser to view the website.
+## Instruções de Configuração
+1. Clone o repositório para sua máquina local.
+2. Navegue até o diretório do projeto.
+3. Abra o arquivo `src/index.html` em seu navegador para visualizar o site.
 
-## Challenges Faced
-- Ensuring cross-browser compatibility for the responsive design.
-- Implementing JavaScript validation for the contact form to enhance user experience.
-- Balancing aesthetics and functionality to create an engaging user interface.
+## Desafios Enfrentados
+- Garantir compatibilidade entre navegadores para o design responsivo.
+- Implementar validação em JavaScript para o formulário de contato, melhorando a experiência do usuário.
+- Equilibrar estética e funcionalidade para criar uma interface envolvente.
 
-## Future Improvements
-- Integrate a backend service for handling form submissions.
-- Enhance SEO features for better visibility in search engines.
-- Add more interactive elements and animations to improve user engagement.
+## Melhorias Futuras
+- Integrar um serviço backend para lidar com o envio dos formulários.
+- Aprimorar recursos de SEO para melhor visibilidade em mecanismos de busca.
+- Adicionar mais elementos interativos e animações para aumentar o engajamento do usuário.
 
-## License
-This project is open-source and available for modification and distribution.
+## Licença
+Este projeto é open-source e está disponível para modificação e distribuição.

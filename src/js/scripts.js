@@ -33,7 +33,7 @@ function validateForm() {
 }
 
 // Event listener for form submission
-document.getElementById('contact-form').addEventListener('submit', function(event) {
+document.getElementById('contactForm').addEventListener('submit', function(event) {
     if (!validateForm()) {
         event.preventDefault(); // Prevent form submission if validation fails
     }
