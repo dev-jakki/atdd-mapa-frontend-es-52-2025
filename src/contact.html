@@ -1,97 +1,190 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Entre em contato conosco através deste formulário.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Entre em contato conosco através deste formulário."
+    />
     <title>Contato - Meu Website</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
     <style>
-        body {
-            background: #f6f8fa;
-        }
-        .flat-card {
-            background: #fff;
-            border-radius: 18px;
-            box-shadow: 0 2px 16px rgba(0,0,0,0.04);
-            padding: 2.5rem 2rem;
-            margin-top: 2rem;
-        }
-        .btn-flat {
-            background: #22223b;
-            color: #fff;
-            border-radius: 8px;
-            border: none;
-            padding: 0.75rem 2rem;
-            font-weight: 600;
-            transition: background 0.2s;
-        }
-        .btn-flat:hover {
-            background: #4a4e69;
-            color: #fff;
-        }
+      body {
+        background: #f6f8fa;
+      }
+      .flat-card {
+        background: #fff;
+        border-radius: 18px;
+        box-shadow: 0 2px 16px rgba(0, 0, 0, 0.04);
+        padding: 2.5rem 2rem;
+        margin-top: 2rem;
+      }
+      .btn-flat {
+        background: #22223b;
+        color: #fff;
+        border-radius: 8px;
+        border: none;
+        padding: 0.75rem 2rem;
+        font-weight: 600;
+        transition: background 0.2s;
+      }
+      .btn-flat:hover {
+        background: #4a4e69;
+        color: #fff;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header class="bg-primary text-white py-4 mb-4 shadow-sm">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-primary p-0">
-                <div class="container-fluid p-0">
-                    <a class="navbar-brand fw-bold" href="index.html">Jakki</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
-                            <li class="nav-item"><a class="nav-link" href="about.html">Sobre</a></li>
-                            <li class="nav-item"><a class="nav-link" href="projetos.html">Projetos</a></li>
-                            <li class="nav-item"><a class="nav-link active" href="contact.html">Contato</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary p-0">
+          <div class="container-fluid p-0">
+            <a class="navbar-brand fw-bold" href="index.html">Jakki</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Início</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">Sobre</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="projetos.html">Projetos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="contact.html">Contato</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main>
-        <section class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="flat-card">
-                        <h1 class="mb-4 text-center">Contato</h1>
-                        <form id="contactForm">
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Nome:</label>
-                                <input type="text" class="form-control" id="name" name="name" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">E-mail:</label>
-                                <input type="email" class="form-control" id="email" name="email" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="message" class="form-label">Mensagem:</label>
-                                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-                            </div>
-                            <div class="d-grid">
-                                <button type="submit" class="btn btn-flat">Enviar</button>
-                            </div>
-                        </form>
-                        <div id="formResponse" class="mt-3"></div>
-                    </div>
+      <section class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-7">
+            <div class="flat-card">
+              <h1 class="mb-4 text-center">Contato</h1>
+              <form id="contactForm" novalidate>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Nome:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    required
+                  />
+                  <div id="nameError" class="form-text text-danger d-none">
+                    O nome é obrigatório.
+                  </div>
                 </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">E-mail:</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    required
+                  />
+                  <div id="emailError" class="form-text text-danger d-none">
+                    E-mail válido é obrigatório.
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Mensagem:</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                  ></textarea>
+                  <div id="messageError" class="form-text text-danger d-none">
+                    A mensagem não pode estar vazia.
+                  </div>
+                </div>
+                <div class="d-grid">
+                  <button type="submit" class="btn btn-flat">Enviar</button>
+                </div>
+              </form>
+              <div id="formResponse" class="mt-3"></div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="bg-light text-center py-3 mt-5 border-top">
-        <div class="container">
-            <p class="mb-0 text-secondary">&copy; 2025 Jakki. Todos os direitos reservados.</p>
-        </div>
+      <div class="container">
+        <p class="mb-0 text-secondary">
+          &copy; 2025 Jakki. Todos os direitos reservados.
+        </p>
+      </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function validateForm() {
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const message = document.getElementById("message").value.trim();
+
+        let valid = true;
+
+        // Esconde todos os erros antes de validar
+        document.getElementById("nameError").classList.add("d-none");
+        document.getElementById("emailError").classList.add("d-none");
+        document.getElementById("messageError").classList.add("d-none");
+
+        // Validação do nome
+        if (name === "") {
+          document.getElementById("nameError").classList.remove("d-none");
+          valid = false;
+        }
+
+        // Validação do e-mail
+        if (email === "" || !/^[^ ]+@[^ ]+\.[a-z]{2,}$/i.test(email)) {
+          document.getElementById("emailError").classList.remove("d-none");
+          valid = false;
+        }
+
+        // Validação da mensagem
+        if (message === "") {
+          document.getElementById("messageError").classList.remove("d-none");
+          valid = false;
+        }
+
+        return valid;
+      }
+
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          if (!validateForm()) {
+            event.preventDefault();
+          } else {
+            document.getElementById("formResponse").innerHTML =
+              '<div class="alert alert-success mt-3">Mensagem enviada com sucesso!</div>';
+          }
+        });
+    </script>
     <script src="js/scripts.js"></script>
-</body>
+  </body>
 </html>
